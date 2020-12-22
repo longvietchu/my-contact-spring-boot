@@ -1,9 +1,9 @@
 package io.github.longchuviet.user.service;
 
 import io.github.longchuviet.user.entity.User;
-import jdk.nashorn.internal.runtime.options.Option;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
     List<User> getAllUser();
@@ -12,5 +12,5 @@ public interface UserService {
 
     void deleteUser(Long id);
 
-    Option<User> findUserById(Long id);
+    Optional<User> findUserById(Long id);
 }

@@ -1,6 +1,8 @@
 package io.github.longchuviet.user.service.impl;
 
 import io.github.longchuviet.user.entity.User;
+import io.github.longchuviet.user.repository.UserRepository;
+import io.github.longchuviet.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl {
-    @Autowired
-    private UserRepository userRepository;
+public class UserServiceImpl implements UserService {
+    @Autowired private UserRepository userRepository;
 
     @Override
     public List<User> getAllUser() {

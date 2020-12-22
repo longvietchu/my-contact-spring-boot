@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.longchuviet</groupId>
-    <artifactId>mycontact</artifactId>
+    <artifactId>user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mycontact</name>
+    <name>user</name>
     <description>Contacts project Spring Boot</description>
 
     <properties>
